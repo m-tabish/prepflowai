@@ -66,6 +66,7 @@ def main():
         3. Key qualifications
         4. Areas for improvement
         5. Suggestions for better alignment with the job requirements
+        6.ReWrite the Resume with adding Suggestive Changes.
         """
 
         # Generate response from the model
