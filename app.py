@@ -6,6 +6,7 @@ from PyPDF2 import PdfReader
 import matplotlib.pyplot as plt
 import regex
 import random  # Import random for generating dummy relevance values
+from dotenv import load_dotenv
 
 dotenv.load_dotenv()
 
@@ -29,17 +30,17 @@ def generate_random_relevance():
 # Streamlit app
 def main():
     logopath = "./neuralnexuslogo.jpg"
-    st.image(logopath,width=100,)
     
-    st.markdown(
-        
-    "<h1 style='text-align: center;'>📄 Resume <span style='color: yellow;'>संचल</span> 🤖</h1> " ,
-    unsafe_allow_html=True
-)
-    # st.title("रिज्यूमे से जॉब तक, संचाल आपका साथ")
-    tagline = '<p style="width:100%; color:white; text-align:center; font-size: 24px;"> Resume to Job, Sanchal guides you through.</p>'
-    st.markdown (tagline, unsafe_allow_html=True)
-    
+    # Title and subtitle alignment
+    col1, col2, col3 = st.columns([1, 6, 1])
+    with col2:
+        st.image(logopath, width=100)
+        st.markdown(
+            "<h1 style='text-align: center;'>📄 Resume <span style='color: yellow;'>संचल</span> 🤖</h1> ",
+            unsafe_allow_html=True,
+        )
+        tagline = '<p style="width:100%; color:white; text-align:center; font-size: 24px;">Resume to Job, Sanchal guides you through.</p>'
+        st.markdown(tagline, unsafe_allow_html=True)
 
     # Job description input
     job_description = st.text_area("Enter the job description:")
@@ -60,13 +61,12 @@ def main():
         {resume_text}
 
         Please analyze the resume against the job description and suggest changes or improvements. Consider the following:
-        1. Skills matchsr
-        
+        1. Skills match
         2. Experience relevance
         3. Key qualifications
         4. Areas for improvement
         5. Suggestions for better alignment with the job requirements
-        6.ReWrite the Resume with adding Suggestive Changes.
+        6. Rewrite the Resume with adding Suggestive Changes.
         """
 
         # Generate response from the model
@@ -107,6 +107,22 @@ def main():
 
         # Display the plot in Streamlit
         st.pyplot(fig)
+
+    # Footer section
+    st.markdown("---")
+    st.markdown(
+        """
+        <div style="text-align: center;">
+            <h3>Developed by <span style="color: #FFA500;">Tabish</span>, <span style="color: #00FF00;">Shrinjay</span>, and <span style="color: #FF69B4;">Harshita</span></h3>
+            <p>
+                <a href="https://github.com/m-tabish" target="_blank">Tabish's GitHub</a> | 
+                <a href="https://github.com/shrinjayshresth1" target="_blank">Shrinjay's GitHub</a> | 
+                <a href="https://github.com/harshita" target="_blank">Harshita's GitHub</a>
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 # Correct the "__main__" check
 if __name__ == "__main__":
