@@ -84,7 +84,7 @@ def main():
 
         # Display the dashboard
         st.subheader("Dashboard:")
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4 = st.columns(4)  
         col1.metric("Skills Relevance", f"{skills_relevance:.2f}%")
         col2.metric("Experience Relevance", f"{experience_relevance:.2f}%")
         col3.metric("Key Qualifications Relevance", f"{key_qualifications_relevance:.2f}%")
@@ -113,11 +113,11 @@ def main():
     st.markdown(
         """
         <div style="text-align: center;">
-            <h3>Developed by <span style="color: #FFA500;">Tabish</span>, <span style="color: #00FF00;">Shrinjay</span>, and <span style="color: #FF69B4;">Harshita</span></h3>
+            <h3>Developed by <span style="color: #00FF00;">Shrinjay</span>, <span style="color: #FFA500;">Tabish</span> and <span style="color: #FF69B4;">Harshita</span></h3>
             <p>
-                <a href="https://github.com/m-tabish" target="_blank">Tabish's GitHub</a> | 
                 <a href="https://github.com/shrinjayshresth1" target="_blank">Shrinjay's GitHub</a> | 
-                <a href="https://github.com/harshita" target="_blank">Harshita's GitHub</a>
+                <a href="https://github.com/m-tabish" target="_blank">Tabish's GitHub</a> | 
+                <a href="https://github.com/hsingh8850" target="_blank">Harshita's GitHub</a>
             </p>
         </div>
         """,
