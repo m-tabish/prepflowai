@@ -1,12 +1,12 @@
 import subprocess
-subprocess.run(["pip", "install", "google-generativeai"]) 
+subprocess.run(["pip", "install", "google-generativeai"])
+
 import streamlit as st
 import os
 import google.generativeai as genai
 import dotenv
 from PyPDF2 import PdfReader
-import matplotlib.pyplot as plt
-import regex
+import matplotlib.pyplot as plt 
 import random  # Import random for generating dummy relevance values
 from dotenv import load_dotenv
 
