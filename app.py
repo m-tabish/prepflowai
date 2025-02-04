@@ -36,12 +36,12 @@ def main():
     # Title and subtitle alignment
     col1, col2, col3 = st.columns([1, 6, 1])
     with col2:
-        st.image(logopath, width=100)
+       
         st.markdown(
-            "<h1 style='text-align: center;'>📄 Resume <span style='color: yellow;'>संचल</span> 🤖</h1> ",
+            "<h1 style='text-align: center;'>📄Prep<span style='color: yellow;'>flow.ai</span> 🤖</h1> ",
             unsafe_allow_html=True,
         )
-        tagline = '<p style="width:100%; color:white; text-align:center; font-size: 24px;">Resume to Job, Sanchal guides you through.</p>'
+        tagline = '<p style="width:100%; color:white; text-align:center; font-size: 24px;">Leveling the playing field. Accessible AI for a smarter sob search.</p>'
         st.markdown(tagline, unsafe_allow_html=True)
 
     # Job description input
@@ -115,11 +115,10 @@ def main():
     st.markdown(
         """
         <div style="text-align: center;">
-            <h3>Developed by <span style="color: #00FF00;">Shrinjay</span>, <span style="color: #FFA500;">Tabish</span> and <span style="color: #FF69B4;">Harshita</span></h3>
+            <h3>Developed by <span style="color: #FFFF00;">Shrinjay</span> and <span style="color: #FFFF00;">Tabish</span>  <span style="color: #FFFF00;"> </span></h3>
             <p>
                 <a href="https://github.com/shrinjayshresth1" target="_blank">Shrinjay's GitHub</a> | 
-                <a href="https://github.com/m-tabish" target="_blank">Tabish's GitHub</a> | 
-                <a href="https://github.com/hsingh8850" target="_blank">Harshita's GitHub</a>
+                <a href="https://github.com/m-tabish" target="_blank">Tabish's GitHub</a> 
             </p>
         </div>
         """,
