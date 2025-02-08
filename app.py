@@ -117,8 +117,7 @@ def main():
         <div style="text-align: center;">
             <h3>Developed by <span style="color: #FFFF00;">Shrinjay</span> and <span style="color: #FFFF00;">Tabish</span>  <span style="color: #FFFF00;"> </span></h3>
             <p>
-                <a href="https://github.com/shrinjayshresth1" target="_blank">Shrinjay's GitHub</a> | 
-                <a href="https://github.com/m-tabish" target="_blank">Tabish's GitHub</a> 
+                <a href="" target="_blank">Neural Nex</a>    
             </p>
         </div>
         """,
