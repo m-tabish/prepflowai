@@ -114,11 +114,7 @@ def main():
     st.markdown("---")
     st.markdown(
         """
-        <div style="text-align: center;">
-            <h3>Developed by <span style="color: #FFFF00;">Shrinjay</span> and <span style="color: #FFFF00;">Tabish</span>  <span style="color: #FFFF00;"> </span></h3>
-            <p>
-                <a href="" target="_blank">Neural Nex</a>    
-            </p>
+        <div style="text-align: center;"><h3>Developed by Neural Nexus<span style="color: #FFFF00;"</span> </h3> 
         </div>
         """,
         unsafe_allow_html=True,
