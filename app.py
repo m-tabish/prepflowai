@@ -41,7 +41,7 @@ def main():
             "<h1 style='text-align: center;'>📄Prep<span style='color: yellow;'>Flow.ai</span> 🤖</h1> ",
             unsafe_allow_html=True,
         )
-        tagline = '<p style="width:100%; color:white; text-align:center; font-size: 24px;">Leveling the playing field. Accessible AI for a smarter sob search.</p>'
+        tagline = '<p style="width:100%; color:white; text-align:center; font-size: 24px;">Leveling the playing field. Accessible AI for a smarter job search.</p>'
         st.markdown(tagline, unsafe_allow_html=True)
 
     # Job description input
