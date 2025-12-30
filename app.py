@@ -15,7 +15,7 @@ dotenv.load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Set up the model
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+model = genai.GenerativeModel("models/gemini-flash-latest")
 
 # Function to extract text from PDF
 def extract_text_from_pdf(file):
